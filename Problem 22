@@ -1,0 +1,23 @@
+#include <iostream>
+#include <math.h>
+using namespace std;
+
+int main()
+{
+
+  long double x = 1, y=2, total, counter=3;
+
+	for(long double i=0;i<100000;i++)
+  {
+		counter++;
+  	total=x+y;
+
+		if(total>=(powl(10,999)))
+	    break;
+
+		x=y;
+		y=total;
+	}
+   cout<<"answer: "<<counter<<endl;
+return 0;
+}
